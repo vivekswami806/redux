@@ -1,0 +1,6 @@
+.formhandel{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    gap: 30px;
+}
