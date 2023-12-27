@@ -1,9 +1,10 @@
-import { error,fetched,loading } from "../action/actionType";
+import { error,fetched,loading ,single} from "../action/actionType";
 
 const initalvalue ={
     loading:false,
     data:[],
-    error:""
+    error:"",
+    single:[]
 }
 
 export function fetchReducer(state=initalvalue,action){
@@ -14,6 +15,9 @@ export function fetchReducer(state=initalvalue,action){
                 return{...state,loading:false,data:action.payload}
                 case error:
                     return {...state,loading:false,error:action.payload}
+                    case "single":
+                         console.log(action.payload);
+                        return {...state,loading:false,single:action.payload}
                     default:
                         return state
       }

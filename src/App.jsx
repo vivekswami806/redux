@@ -13,11 +13,17 @@ import ColorCounter from "./Componment/ColorCounter";
 import Formhandle from "./Componment/Formhandle";
 import CounterAdding from "./Componment/Counter";
 import SearchHandle from "./Componment/SearchHandle";
+import { Route, Routes } from "react-router-dom";
+import SinglePage from "./Componment/SinglePage";
 
 function App() {
   return (
     <>
-    <SearchHandle/>
+    <Routes>
+    <Route path="/" element={<SearchHandle/>}/>
+    <Route path="/singlepage/:id" element={<SinglePage/>}/>
+
+    </Routes>
       {/* <Eventhanderler/> */}
       {/* <Backghndelbtn/> */}
       {/* <CounterAdding/> */}
