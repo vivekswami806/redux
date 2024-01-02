@@ -41,10 +41,10 @@ function PageNation() {
 
   return (
     <div>
-      <button onClick={deccr} style={{border:"2px solid pink",borderRadius:"20px" , height:"2rem", width:"3rem", background:"purple"}}>pre </button>
+      <button onClick={deccr} style={{border:"2px solid pink",borderRadius:"20px" , height:"2rem", width:"3rem", background:"purple", color:"whitesmoke"}}>pre </button>
       {buttons.map((_, i) => {
         return (
-          <button style={{border:"2px solid pink",borderRadius:"20px" , height:"2rem", width:"3rem", background:"rebeccapurple"}}
+          <button style={{border:"2px solid pink",borderRadius:"20px",color:"white" , height:"2rem", width:"3rem", background:"rebeccapurple"}}
             key={i}
             onClick={() => {
               valuehandel(i * 10);
@@ -54,7 +54,7 @@ function PageNation() {
           </button>
         );
       })}
-      <button onClick={incr} style={{border:"2px solid pink",borderRadius:"20px" , height:"2rem", width:"3rem", background:"rebeccapurple"}}>next </button>
+      <button onClick={incr} style={{  color:"whitesmoke",border:"2px solid pink",borderRadius:"20px" , height:"2rem", width:"3rem", background:"rebeccapurple"}}>next </button>
     </div>
   );
 }

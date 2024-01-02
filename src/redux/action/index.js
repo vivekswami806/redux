@@ -53,6 +53,18 @@ function cathandel(e, x) {
   let { value } = e.target;
   return { type: "category", payload: { value, x } };
 }
+function addtocart(count, mainData) {
+  // let { value } = e.target;
+  
+  return { type: "cartadd", payload: {count,mainData} };
+}
+function LocoalStore(){
+  return localStorage.getItem("cart")?JSON.parse(localStorage.getItem("cart")):[]
+}
+function removeHandel(id){
+ return {type:"removeItems" , payload:id}
+}
 
 
-export { FetchHandler, SearchHandler, SortingHandler,cathandel,SingleFetch };
+
+export {removeHandel, LocoalStore, FetchHandler, SearchHandler, SortingHandler,cathandel,SingleFetch,addtocart };

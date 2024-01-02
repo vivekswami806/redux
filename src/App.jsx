@@ -15,6 +15,7 @@ import CounterAdding from "./Componment/Counter";
 import SearchHandle from "./Componment/SearchHandle";
 import { Route, Routes } from "react-router-dom";
 import SinglePage from "./Componment/SinglePage";
+import CartProduct from "./Componment/CartProduct";
 
 function App() {
   return (
@@ -22,7 +23,7 @@ function App() {
     <Routes>
     <Route path="/" element={<SearchHandle/>}/>
     <Route path="/singlepage/:id" element={<SinglePage/>}/>
-
+    <Route path="/cartproduct" element={<CartProduct/>}/> 
     </Routes>
       {/* <Eventhanderler/> */}
       {/* <Backghndelbtn/> */}

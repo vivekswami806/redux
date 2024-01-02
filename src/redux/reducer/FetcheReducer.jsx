@@ -16,7 +16,7 @@ export function fetchReducer(state=initalvalue,action){
                 case error:
                     return {...state,loading:false,error:action.payload}
                     case "single":
-                         console.log(action.payload);
+                       
                         return {...state,loading:false,single:action.payload}
                     default:
                         return state
